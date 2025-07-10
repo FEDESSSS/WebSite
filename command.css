@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald", sans-serif; /* Изменено на sans-serif для более современного вида */
+    font-weight: 400;
+    color: #000; /* Чёрный цвет текста */
+    background-color: #fff; /* Белый фон для контраста */
+}
+
+.container {
+    width: 80%;
+    max-width: 1600px; /* Максимальная ширина контейнера */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #fff; /* Белый фон для заголовка */
+    color: #000; /* Чёрный цвет текста */
+    padding: 20px 0;
+    box-shadow: none; /* Убрали тень для более минималистичного вида */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+h1 {
+    margin: 0 20px;
+    flex-grow: 1;
+    text-align: left;
+    font-size: 2em; /* Увеличенный размер заголовка */
+    font-weight: bold; /* Жирный шрифт для заголовка */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000; /* Чёрный цвет текста */
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Добавляем трансформацию */
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #666; /* Серый цвет при наведении */
+    transform: translateY(-2px); /* Подъем при наведении */
+}
+
+footer {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: none; /* Убрали тень для минимализма */
+}
+
+.team {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team h2 {
+    margin-bottom: 30px;
+    color: #000; /* Чёрный цвет заголовка команды */
+}
+
+.team-container {
+    position: relative;
+    display: flex; /* Используем flexbox для расположения членов команды */
+    justify-content: center; /* Центрируем членов команды */
+    flex-wrap: wrap; /* Позволяет переносить элементы */
+}
+
+.team-member {
+    margin: 10px; /* Отступы между членами команды */
+}
+
+.team-member h3 {
+    color: #000; /* Чёрный цвет для имен членов команды */
+}
+
+.gif-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.team-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 0; /* Убрали зак
+    /* Убрали закругления */
+    object-fit: cover;
+    border: 2px solid #000; /* Чёрная рамка */
+    transition: transform 0.3s, box-shadow 0.3s; /* Плавный переход и тень при наведении */
+}
+
+.team-photo:hover {
+    transform: scale(1.05); /* Увеличение фотографии при наведении */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Более явная тень при наведении */
+}
+
+.team-gif {
+    display: none;
+    max-width: 300px; /* Скрываем GIF по умолчанию */
+}
+
+.image-container:hover .team-photo {
+    display: none; /* Скрываем изображение при наведении */
+}
+
+.image-container:hover .team-gif {
+    display: block; /* Показываем GIF при наведении */
+}
+

@@ -1,0 +1,104 @@
+.container {
+    width: 80%;
+    max-width: 1600px; /* Максимальная ширина контейнера */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald", sans-serif; /* Изменено на sans-serif для более современного вида */
+    font-weight: 400;
+    color: #000; /* Чёрный цвет текста */
+    background-color: #fff; /* Белый фон для контраста */
+}
+header {
+    background-color: #ffffff; /* Белый фон для заголовка */
+    color: #000; /* Чёрный цвет текста */
+    padding: 20px 0;
+    box-shadow: none; /* Убрали тень для более минималистичного вида */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+h1 {
+    margin: 0 20px;
+    flex-grow: 1;
+    text-align: left;
+    font-size: 2em; /* Увеличенный размер заголовка */
+    font-weight: bold; /* Жирный шрифт для заголовка */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000; /* Чёрный цвет текста */
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Добавляем трансформацию */
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #666; /* Серый цвет при наведении */
+    transform: translateY(-2px); /* Подъем при наведении */
+}
+
+footer {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: none; /* Убрали тень для минимализма */
+}
+
+.btn {
+    background-color: transparent; /* Прозрачный фон для кнопки */
+    color: #000; /* Чёрный цвет текста кнопки */
+    padding: 10px 15px; /* Отступы для кнопки */
+    border: 2px solid #000; /* Чёрная рамка */
+    border-radius: 0; /* Убрали закругления */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s, transform 0.3s; /* Плавный переход для фона и трансформации */
+}
+
+.btn:hover {
+    background-color: #000; /* Чёрный цвет кнопки при наведении */
+    color: #fff; /* Белый цвет текста кнопки при наведении */
+    transform: translateY(-2px); /* Подъем кнопки при наведении */
+}
+
+input, textarea {
+    border: 1px solid #000; /* Чёрная рамка */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    padding: 10px;
+    border-radius: 0; /* Убрали закругления */
+}
+
+input:focus, textarea:focus {
+    border-color: #666; /* Серый цвет рамки при фокусе */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Легкая тень при фокусе */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

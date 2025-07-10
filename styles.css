@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald", sans-serif; /* Изменено на sans-serif для более современного вида */
+    font-weight: 400;
+    color: #000; /* Чёрный цвет текста */
+    background-color: #fff; /* Белый фон для контраста */
+}
+
+.container {
+    width: 80%;
+    max-width: 1600px; /* Максимальная ширина контейнера */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #ffffff; /* Белый фон для заголовка */
+    color: #000; /* Чёрный цвет текста */
+    padding: 20px 0;
+    box-shadow: none; /* Убрали тень для более минималистичного вида */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+h1 {
+    margin: 0 20px;
+    flex-grow: 1;
+    text-align: left;
+    font-size: 2em; /* Увеличенный размер заголовка */
+    font-weight: bold; /* Жирный шрифт для заголовка */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000; /* Чёрный цвет текста */
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Добавляем трансформацию */
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #666; /* Серый цвет при наведении */
+    transform: translateY(-2px); /* Подъем при наведении */
+}
+
+.services, .about, .contact, .team {
+    padding: 50px 0;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff; /* Белый фон для каждого блока сервиса */
+    border-radius: 0; /* Убрали закругления для более строгого вида */
+    box-shadow: none; /* Убрали тень для минимализма */
+    overflow: hidden; /* Обрезаем содержимое */
+}
+
+.service-item:nth-child(even) {
+    flex-direction: row-reverse; /* Меняем порядок для четных блоков */
+}
+
+.container img {
+    max-height: 500px;
+    width: 100%; /* Изображение растягивается на всю ширину блока */
+    object-fit: cover; /* Сохраняем пропорции */
+}
+
+footer {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: none; /* Убрали тень для минимализма */
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.uslugi {
+    width: 100px; /* Установите ширину изображения по вашему усмотрению */
+    margin-right: 20px; /* Уменьшили отступ между изображением и текстом */
+    flex-direction: row;
+}
+
+.text {
+    width: 500px;
+}
+
+.about {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.5em; /* Уменьшаем размер заголовка на мобильных */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Уменьшаем отступы для мобильных */
+    }
+
+    .service-item {
+        flex-direction: column; /* Изменяем направление для мобильных */
+    }
+
+    .content {
+        flex-direction: column; /* Упрощаем структуру для мобильных */
+    }
+
+    .text {
+        width: auto; /* Убираем фиксированную ширину для адаптивности */
+    }
+}
+
+
+
+
+
